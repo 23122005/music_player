@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="music-player">
+        <div class="cover">
+            <img id="cover-img" src="Chhtrapati Shivaji Maharaj.jpg" alt="Album Cover">
+        </div>
+        <div class="info">
+            <h2 id="title" class="track-title"> Pawankhind </h2>
+            <p id="artist" class="artist-name"> Chhtrapati Shivaji Maharaj Songs </p>
+        </div>
+        <audio id="audio">
+            <source src="audio/Shwasat Raja Dhyasat Raja.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button id="prev" class="control-btn">&#9664;&#9664;</button>
+            <button id="play-pause" class="control-btn play-pause-btn">&#9654;</button>
+            <button id="next" class="control-btn">&#9654;&#9654;</button>
+        </div>
+        <div class="progress-container">
+            <input type="range" id="seek-bar" value="0" class="seek-bar">
+            <span id="current-time" class="time">0:00</span> / <span id="duration" class="time">0:00</span>
+        </div>
+        <div class="volume-container">
+            <label for="volume-bar" class="volume-label">Volume</label>
+            <input type="range" id="volume-bar" value="100" max="200" class="volume-bar">
+        </div>
+    </div>
+    <script src="style.js"></script>
+</body>
+</html>
